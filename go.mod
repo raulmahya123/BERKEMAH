@@ -1,11 +1,10 @@
-module mahya
+module github.com/raulmahya123/BERKEMAH
 
 go 1.22.3
 
 require (
 	aidanwoods.dev/go-paseto v1.5.1
 	github.com/aiteung/atdb v0.1.7
-	github.com/raulmahya123/salon v1.1.5
 	go.mongodb.org/mongo-driver v1.15.1
 	golang.org/x/crypto v0.24.0
 )
