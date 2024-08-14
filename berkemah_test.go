@@ -1,4 +1,4 @@
-package kursussalon
+package belajarmahya
 
 import (
 	"fmt"
@@ -39,7 +39,7 @@ func TestDecode(t *testing.T) {
 }
 
 func TestRegistrasi(t *testing.T) {
-	mconn := SetConnection("mongoenvkatalogfilm", "katalogfilm")
+	mconn := SetConnection("mongodb+srv://mobile:BYwtwvbqgMBoztTN@cluster0.dlsoucp.mongodb.net/", "katalogfilm")
 	var user User
 	user.Name = "Ibrohim"
 	user.Username = "Ibrohim"
@@ -56,7 +56,7 @@ func TestRegistrasi(t *testing.T) {
 }
 
 func TestGetAllUser(t *testing.T) {
-	mconn := SetConnection("mongoenvkatalogfilm", "katalogfilm")
+	mconn := SetConnection("mongodb+srv://mobile:BYwtwvbqgMBoztTN@cluster0.dlsoucp.mongodb.net/", "katalogfilm")
 	datauser := GetAllUser(mconn, "user")
 
 	fmt.Println(datauser)

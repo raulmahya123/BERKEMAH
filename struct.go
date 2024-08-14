@@ -56,3 +56,11 @@ type ProductOnlineCourse struct {
 	Price         int    `json:"price" bson:"price"`
 	Authorization string `json:"authorization" bson:"authorization"`
 }
+
+type UserNew struct {
+	ID        string `json:"id" bson:"id"`
+	Name      string `json:"name" bson:"name"`
+	Passoword string `json:"password" bson:"password"`
+	Role      string `json:"role" bson:"role"`
+	Username  string `json:"username" bson:"username"`
+}
